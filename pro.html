@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmLink</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #2E7D32;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .container {
+      padding: 15px;
+    }
+
+    .search-box {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #2E7D32;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      margin: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin: 0 0 5px;
+    }
+
+    .card p {
+      margin: 3px 0;
+      color: #555;
+    }
+
+    .card button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 8px;
+      background: #2E7D32;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background: #2E7D32;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>🌱 FarmLink</h2>
+  <div>☰</div>
+</header>
+
+<div class="container">
+  <input class="search-box" placeholder="Search products or equipment...">
+
+  <div class="buttons">
+    <button class="btn">🥕 Explore Products</button>
+    <button class="btn">🚜 Rent Equipment</button>
+  </div>
+
+  <h3>🌟 Featured Products</h3>
+
+  <div class="card">
+    <h3>🥬 Tomato 🌿</h3>
+    <p>Farmer: Ramesh</p>
+    <p>📍 2 km away</p>
+    <p>💰 ₹40/kg</p>
+    <button>📞 Contact</button>
+  </div>
+
+  <div class="card">
+    <h3>🥕 Carrot 🌿</h3>
+    <p>Farmer: Suresh</p>
+    <p>📍 5 km away</p>
+    <p>💰 ₹30/kg</p>
+    <button>📞 Contact</button>
+  </div>
+
+  <h3>🚜 Equipment Nearby</h3>
+
+  <div class="card">
+    <h3>🚜 Tractor</h3>
+    <p>Owner: Mahesh</p>
+    <p>📍 3 km away</p>
+    <p>💰 ₹500/hour</p>
+    <button>📅 Book</button>
+  </div>
+
+  <h3>➕ Add Product</h3>
+
+  <div class="form-group">
+    <input placeholder="Product Name">
+  </div>
+
+  <div class="form-group">
+    <input placeholder="Price">
+  </div>
+
+  <div class="form-group">
+    <input placeholder="Location">
+  </div>
+
+  <button class="submit-btn">Submit</button>
+
+</div>
+
+</body>
+</html>
